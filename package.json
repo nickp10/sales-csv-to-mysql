@@ -1,6 +1,6 @@
 {
-  "name": "csv-to-mysql",
-  "version": "1.1.0",
+  "name": "sales-csv-to-mysql",
+  "version": "2.0.0",
   "description": "Reads CSV files and imports them into a MySQL database",
   "bin": "build/index.js",
   "main": "build/index.js",
