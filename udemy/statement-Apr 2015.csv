@@ -1,0 +1,43 @@
+Your total earnings
+Revenue Channel,Earnings
+organic:Udemy Organic,0
+instructor:Your Promotions,0
+affiliate:Affiliate Program,0
+ads:Ad Program,0
+ufo_subscription:Udemy for Business,39.07
+refunds:Refunds,0
+Your promotion activity
+Coupon Code,Earnings
+cclaunch,0
+cvsstudents,0
+byt70,0
+ cs2students,73.02
+ccs3students,58.20
+students,35.58
+Others,0
+Your earnings by course
+Course Title,Earnings
+C# Advanced Topics: Take Your C# Skills to the Next Level,0
+Backbone Tutorial: Learn Backbonejs from Scratch,0
+C# Developers: Learn the Art of Writing Clean Code,0
+"C# Intermediate: Classes, Interfaces and OOP",0
+C# Developers: Double Your Coding Speed with Visual Studio ,0
+Sales
+Transaction Id,Formatted Date,User Name,Course Name,Coupon Code,Revenue Channel,Vendor,Paid Price,Transaction Currency,Tax Amount,Store Fee,Share Price,Instructor Share,Tax Rate,Exchange Rate
+20076084,Apr 30 '15,Shridhar Sarnobat,Backbone Tutorial: Learn Backbonejs from Scratch,apple-discount-coupon-code,organic,Web,9.99,usd,,,9.99,3.50,0.00,1.0000
+20074030,Apr 30 '15,Artie VanDelayo,C# Advanced Topics: Take Your C# Skills to the Next Level,android-discount,ads,Web,10.00,usd,,,10.00,1.75,0.00,1.0000
+20072738,Apr 30 '15,Spencer Davis,C# Advanced Topics: Take Your C# Skills to the Next Level,SPRINGPC,affiliate,Web,12.00,usd,,,12.00,3.00,0.00,1.0000
+20072688,Apr 30 '15,Spencer Davis,"C# Intermediate: Classes, Interfaces and OOP",SPRINGPC,affiliate,Web,12.00,usd,,,12.00,3.00,0.00,1.0000
+Redemptions
+Split Id,Transaction Date,User Name,Course Name,Coupon Code
+48903902,2015-04-10 15:29:07+00:00,Gene R LaRose,"C# Intermediate: Classes, Interfaces and OOP",lucky1
+48888810,2015-04-10 12:41:04+00:00,Ivan Balashov,"C# Intermediate: Classes, Interfaces and OOP",lucky1
+48871138,2015-04-10 09:04:39+00:00,vivek hegde,"C# Intermediate: Classes, Interfaces and OOP",lucky1
+Refunds
+Refund Date,User Name,Course Name,Refund Amount,Instructor Refund Amount
+2015-05-10 08:02:35+00:00,M J,C# Developers: Learn the Art of Writing Clean Code,15.000000,14.55
+2015-04-25 20:02:10+00:00,Ravindra Tulsiram Dolas,C# Advanced Topics: Take Your C# Skills to the Next Level,10.000000,5.00
+2015-04-05 00:39:06+00:00,Reginald Clarke,C# Developers: Double Your Coding Speed with Visual Studio ,19.000000,9.50
+Others
+Details,Amount
+Udemy for Business,0

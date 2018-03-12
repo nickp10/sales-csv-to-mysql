@@ -1,0 +1,36 @@
+{
+  "name": "csv-to-mysql",
+  "version": "1.1.0",
+  "description": "Reads CSV files and imports them into a MySQL database",
+  "bin": "build/index.js",
+  "main": "build/index.js",
+  "files": [
+    "build/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickp10/sales-csv-to-mysql.git"
+  },
+  "author": "nickp10@hotmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nickp10/sales-csv-to-mysql/issues"
+  },
+  "homepage": "https://github.com/nickp10/sales-csv-to-mysql#readme",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "start": "node build/index.js"
+  },
+  "dependencies": {
+    "argv": "0.0.2",
+    "fast-csv": "^2.4.1",
+    "mysql": "^2.15.0"
+  },
+  "devDependencies": {
+    "@types/argv": "0.0.4",
+    "@types/mysql": "^2.15.3",
+    "@types/node": "^9.4.7",
+    "typescript": "^2.7.2"
+  }
+}

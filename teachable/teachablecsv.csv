@@ -1,0 +1,3 @@
+purchased_at,id,user,user_email,product_name,course_name,final_price,net_tax_charge,net_charge_usd,net_product_charge_usd,amount_refunded,refunded_at,net_revenue_usd,vat_fees,author_fees,affiliate_fees,earnings_usd,method,custom_gateway,coupon,is_chargeback,affiliate_email,charge_country,sale_id,user_id,author_email,legacy_id
+2017-09-27,1326898,Marcus Vinicius Marra Domingos,marcus.supernova@gmail.com,Paid Course,Angular 4: Beginner to Pro,2500,0,2500,2500,0,,2349,0,0,0,2349,paypal,false,,,,BR,9095371,7336276,,
+2017-09-28,1330334,Razvan Nicu,cromozooom@gmail.com,Individuals,Angular 4: Beginner to Pro,19900,3980,23880,19900,0,,18793,0,0,0,18793,stripe,false,151OFF,,,GB,9115545,7350920,,

@@ -1,0 +1,191 @@
+Your total earnings
+Revenue Channel,Earnings
+organic:Udemy Organic,613.05
+instructor:Your Promotions,282.27
+affiliate:Affiliate Program,213.83
+refunds:Refunds,89.50
+ads:Ad Program,73.24
+Your promotion activity
+Coupon Code,Earnings
+bjseof2014,95.06
+eof2014,48.50
+eof2014g,48.50
+BQUORA,32.98
+BYOUTUBE,32.98
+cseof2014,24.25
+Your earnings by course
+Course Title,Earnings
+C# Advanced Topics: Take Your C# Skills to the Next Level,445.82
+Backbone Tutorial: Learn Backbonejs from Scratch,366.17
+C# Developers: Double Your Coding Speed with Visual Studio ,280.90
+Sales
+Transaction Id,Formatted Date,User Name,Course Name,Coupon Code,Revenue Channel,Vendor,Paid Price,Transaction Currency,Tax Amount,Store Fee,Share Price,Instructor Share,Tax Rate,Exchange Rate
+12139614,Dec 31 '14,Gene Hoke,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,49.00,usd,,,49.00,12.25,0.00,1.0000
+12129726,Dec 31 '14,Anoir Safi,C# Advanced Topics: Take Your C# Skills to the Next Level,cseof2014,instructor,Web,25.00,usd,,,25.00,24.25,0.00,1.0000
+12079174,Dec 30 '14,Charles Plata,Backbone Tutorial: Learn Backbonejs from Scratch,bjseof2014,instructor,Web,49.00,usd,,,49.00,47.53,0.00,1.0000
+12054394,Dec 30 '14,Fredrik Karlsson,C# Advanced Topics: Take Your C# Skills to the Next Level,cseof2014,affiliate,Web,25.00,usd,,,25.00,6.25,0.00,1.0000
+12048878,Dec 30 '14,Reese Raymond,C# Developers: Double Your Coding Speed with Visual Studio ,eof2014g,instructor,Web,25.00,usd,,,25.00,24.25,0.00,1.0000
+12041736,Dec 30 '14,Stephen Hawk,Backbone Tutorial: Learn Backbonejs from Scratch,THANKSDEC,affiliate,Web,52.00,usd,,,52.00,13.00,0.00,1.0000
+12017494,Dec 29 '14,Karl,Backbone Tutorial: Learn Backbonejs from Scratch,mittens65,ads,Web,52.00,usd,,,52.00,13.00,0.00,1.0000
+12002862,Dec 29 '14,Denes Sapi,C# Developers: Double Your Coding Speed with Visual Studio ,,affiliate,Web,29.00,usd,,,29.00,7.25,0.00,1.0000
+12000586,Dec 29 '14,Kevin Guo,C# Developers: Double Your Coding Speed with Visual Studio ,,organic,Web,29.00,usd,,,29.00,14.50,0.00,1.0000
+11977446,Dec 29 '14,Jennifer Teed,C# Advanced Topics: Take Your C# Skills to the Next Level,,ads,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+11975754,Dec 28 '14,Money Singh,Backbone Tutorial: Learn Backbonejs from Scratch,,organic,Web,48.99,usd,,,49.00,17.15,0.00,1.0000
+11971810,Dec 28 '14,Hari,C# Developers: Double Your Coding Speed with Visual Studio ,mittens65,affiliate,Web,10.00,usd,,,10.00,2.50,0.00,1.0000
+11971776,Dec 28 '14,Hari,C# Advanced Topics: Take Your C# Skills to the Next Level,mittens65,affiliate,Web,6.00,usd,,,6.00,1.50,0.00,1.0000
+11963616,Dec 28 '14,T Harris,C# Developers: Double Your Coding Speed with Visual Studio ,,organic,Web,29.00,usd,,,29.00,14.50,0.00,1.0000
+11959832,Dec 28 '14,José Carlos Reis Molina,C# Developers: Double Your Coding Speed with Visual Studio ,,ads,Web,29.00,usd,,,29.00,7.25,0.00,1.0000
+11955546,Dec 28 '14,Fawazlab@me.com,C# Developers: Double Your Coding Speed with Visual Studio ,eof2014,instructor,Web,25.00,usd,,,25.00,24.25,0.00,1.0000
+11954160,Dec 28 '14,Elson Ong,Backbone Tutorial: Learn Backbonejs from Scratch,frosty55,organic,Web,67.00,usd,,,67.00,33.50,0.00,1.0000
+11942282,Dec 28 '14,Anoir Safi,C# Developers: Double Your Coding Speed with Visual Studio ,,organic,Web,29.00,usd,,,29.00,14.50,0.00,1.0000
+11930738,Dec 27 '14,Thein Htay,C# Advanced Topics: Take Your C# Skills to the Next Level,frosty55,affiliate,Web,8.00,usd,,,8.00,2.00,0.00,1.0000
+11927924,Dec 27 '14,James Taylor,C# Developers: Double Your Coding Speed with Visual Studio ,eof2014g,instructor,Web,25.00,usd,,,25.00,24.25,0.00,1.0000
+11925002,Dec 27 '14,SHUOYU MAO,C# Developers: Double Your Coding Speed with Visual Studio ,rudolph75,affiliate,Web,7.00,usd,,,7.00,1.75,0.00,1.0000
+11916760,Dec 27 '14,Saket Pani,C# Advanced Topics: Take Your C# Skills to the Next Level,mittens65,organic,Web,6.00,usd,,,6.00,3.00,0.00,1.0000
+11897984,Dec 26 '14,Carl Scott,C# Advanced Topics: Take Your C# Skills to the Next Level,frosty55,organic,Web,8.00,usd,,,8.00,4.00,0.00,1.0000
+11897938,Dec 26 '14,Carl Scott,C# Developers: Double Your Coding Speed with Visual Studio ,frosty55,organic,Web,13.00,usd,,,13.00,6.50,0.00,1.0000
+11882354,Dec 26 '14,Loren Stewart,Backbone Tutorial: Learn Backbonejs from Scratch,bjseof2014,instructor,Web,49.00,usd,,,49.00,47.53,0.00,1.0000
+11869146,Dec 26 '14,Corey Floyd,C# Developers: Double Your Coding Speed with Visual Studio ,eof2014,instructor,Web,25.00,usd,,,25.00,24.25,0.00,1.0000
+11856410,Dec 26 '14,Ricardo Molina,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+11847334,Dec 25 '14,Jose,C# Developers: Double Your Coding Speed with Visual Studio ,,affiliate,Web,29.00,usd,,,29.00,7.25,0.00,1.0000
+11838802,Dec 25 '14,Gustav Nyberg,C# Developers: Double Your Coding Speed with Visual Studio ,,organic,Web,29.00,usd,,,29.00,10.15,0.00,1.0000
+11799288,Dec 24 '14,Pieter de Jong,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,9.50,0.00,1.0000
+11764322,Dec 24 '14,JK Bull,C# Developers: Double Your Coding Speed with Visual Studio ,STILLTIME75,affiliate,Web,7.00,usd,,,7.00,1.75,0.00,1.0000
+11763392,Dec 24 '14,JK Bull,C# Advanced Topics: Take Your C# Skills to the Next Level,STILLTIME75,affiliate,Web,4.00,usd,,,4.00,1.00,0.00,1.0000
+11680214,Dec 22 '14,Kemal,C# Developers: Double Your Coding Speed with Visual Studio ,,organic,Web,29.00,usd,,,29.00,14.50,0.00,1.0000
+11641254,Dec 20 '14,Christopher 'Jack' Nilssen,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,18.99,usd,,,19.00,6.65,0.00,1.0000
+11579988,Dec 19 '14,Roger Santana,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,9.50,0.00,1.0000
+11551948,Dec 18 '14,Dudley Bryan Jr.,C# Advanced Topics: Take Your C# Skills to the Next Level,,ads,Web,18.99,usd,,,19.00,3.33,0.00,1.0000
+11514224,Dec 18 '14,Jürgen Viertbauer,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,9.50,0.00,1.0000
+11500774,Dec 17 '14,Troy Haran,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,18.99,usd,,,19.00,6.65,0.00,1.0000
+11486162,Dec 17 '14,Charles Page,Backbone Tutorial: Learn Backbonejs from Scratch,,organic,Web,149.00,usd,,,149.00,74.50,0.00,1.0000
+11479200,Dec 17 '14,Richard Bates,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,9.50,0.00,1.0000
+11477988,Dec 17 '14,Jake Evesque,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,18.99,usd,,,19.00,6.65,0.00,1.0000
+11475098,Dec 17 '14,Özgür Uğur Ayhan,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,18.99,usd,,,19.00,6.65,0.00,1.0000
+11405490,Dec 16 '14,Yarima Ramos Oliva,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,9.50,0.00,1.0000
+11402682,Dec 16 '14,Joni Kämppä,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,18.99,usd,,,19.00,6.65,0.00,1.0000
+11370916,Dec 16 '14,Kevin Guo,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,18.99,usd,,,19.00,6.65,0.00,1.0000
+11356044,Dec 15 '14,Taylor Sprinkle,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,9.50,0.00,1.0000
+11333288,Dec 15 '14,Nebiyou Kedir,C# Advanced Topics: Take Your C# Skills to the Next Level,,ads,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+11284694,Dec 14 '14,Shawn Hartley,Backbone Tutorial: Learn Backbonejs from Scratch,BQUORA,affiliate,Web,34.00,usd,,,34.00,8.50,0.00,1.0000
+11254366,Dec 13 '14,Predrag Basic,C# Developers: Double Your Coding Speed with Visual Studio ,FASTCODER,affiliate,Web,25.00,usd,,,25.00,6.25,0.00,1.0000
+11238164,Dec 13 '14,Stephen Owens,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,6.65,0.00,1.0000
+11236582,Dec 13 '14,Fawazlab@me.com,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,18.99,usd,,,19.00,6.65,0.00,1.0000
+11217658,Dec 12 '14,Craig Gates,C# Advanced Topics: Take Your C# Skills to the Next Level,TIME65CG,organic,Web,6.00,usd,,,6.00,3.00,0.00,1.0000
+11217040,Dec 12 '14,Walther Irie,C# Developers: Double Your Coding Speed with Visual Studio ,,organic,Web,29.00,usd,,,29.00,14.50,0.00,1.0000
+11184426,Dec 11 '14,Jose Arriaga,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,18.99,usd,,,19.00,6.65,0.00,1.0000
+11145528,Dec 10 '14,Katherine Guzman,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+11127678,Dec 10 '14,Joe Henstridge,C# Developers: Double Your Coding Speed with Visual Studio ,time65,ads,Web,10.00,usd,,,10.00,2.50,0.00,1.0000
+11124416,Dec 10 '14,Craig Gates,C# Developers: Double Your Coding Speed with Visual Studio ,time65,organic,Web,10.00,usd,,,10.00,5.00,0.00,1.0000
+11115538,Dec 10 '14,Mark &#39;Fish&#39; Fisher,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,9.50,0.00,1.0000
+11066772,Dec 10 '14,Full Name,C# Developers: Double Your Coding Speed with Visual Studio ,,affiliate,Web,29.00,usd,,,29.00,7.25,0.00,1.0000
+11066596,Dec 10 '14,Full Name,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+11041472,Dec 09 '14,Harry Michaels,Backbone Tutorial: Learn Backbonejs from Scratch,time65,affiliate,Web,52.00,usd,,,52.00,13.00,0.00,1.0000
+11031296,Dec 09 '14,Gary Douglas,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+11025052,Dec 08 '14,John Olverson,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,9.50,0.00,1.0000
+11024558,Dec 08 '14,Alok Ranjan,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10997782,Dec 08 '14,Fred Francisco,C# Advanced Topics: Take Your C# Skills to the Next Level,,ads,Web,18.99,usd,,,19.00,3.33,0.00,1.0000
+10989114,Dec 07 '14,Jason White,C# Advanced Topics: Take Your C# Skills to the Next Level,,ads,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10974762,Dec 07 '14,Niels W,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,9.50,0.00,1.0000
+10974752,Dec 07 '14,Niels W,C# Developers: Double Your Coding Speed with Visual Studio ,,organic,Web,29.00,usd,,,29.00,14.50,0.00,1.0000
+10957502,Dec 06 '14,Corey Floyd,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,18.99,usd,,,19.00,6.65,0.00,1.0000
+10953194,Dec 06 '14,Penny,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,9.50,0.00,1.0000
+10952308,Dec 06 '14,Bryan Gianninoto,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,3.33,0.00,1.0000
+10949804,Dec 06 '14,Sean Cairns,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,18.99,usd,,,19.00,6.65,0.00,1.0000
+10945334,Dec 06 '14,Michael Keskinidis,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,6.65,0.00,1.0000
+10945070,Dec 06 '14,Shane Stoyle,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10944254,Dec 06 '14,Dev Sarangi,C# Advanced Topics: Take Your C# Skills to the Next Level,,ads,Web,19.00,usd,,,19.00,3.33,0.00,1.0000
+10937524,Dec 06 '14,Akshay Deshpande,C# Developers: Double Your Coding Speed with Visual Studio ,time65,ads,Web,10.00,usd,,,10.00,2.50,0.00,1.0000
+10914142,Dec 05 '14,Christopher Weaver,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,18.99,usd,,,19.00,6.65,0.00,1.0000
+10910776,Dec 05 '14,Alan Kwok,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10910716,Dec 05 '14,Alan Kwok,C# Developers: Double Your Coding Speed with Visual Studio ,,affiliate,Web,29.00,usd,,,29.00,7.25,0.00,1.0000
+10904954,Dec 05 '14,Charles Plata,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10903862,Dec 05 '14,Ola Ogunyemi,Backbone Tutorial: Learn Backbonejs from Scratch,BYOUTUBE,instructor,Web,34.00,usd,,,34.00,32.98,0.00,1.0000
+10900266,Dec 05 '14,Christian John,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,9.50,0.00,1.0000
+10891984,Dec 05 '14,Qdsdfe,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10876612,Dec 04 '14,Zhangming,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10874810,Dec 04 '14,Jacob Philip,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,6.65,0.00,1.0000
+10856954,Dec 04 '14,Jim Novak,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,9.50,0.00,1.0000
+10856282,Dec 04 '14,Zhangming,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10852654,Dec 04 '14,Jon Tolin,C# Developers: Double Your Coding Speed with Visual Studio ,,organic,Web,29.00,usd,,,29.00,14.50,0.00,1.0000
+10818272,Dec 03 '14,Peter Kasik,Backbone Tutorial: Learn Backbonejs from Scratch,,organic,Web,149.00,usd,,,149.00,74.50,0.00,1.0000
+10815772,Dec 03 '14,Jason E. Rice,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,9.50,0.00,1.0000
+10812712,Dec 03 '14,Neil Powers,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,9.50,0.00,1.0000
+10811674,Dec 03 '14,Joseph Micholocyk,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,6.65,0.00,1.0000
+10803016,Dec 03 '14,Chris Umstead,C# Advanced Topics: Take Your C# Skills to the Next Level,,ads,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10799228,Dec 03 '14,Brent Giesler,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,9.50,0.00,1.0000
+10795134,Dec 03 '14,Heru Rubin,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,9.50,0.00,1.0000
+10794294,Dec 03 '14,Brad Rhoads,C# Advanced Topics: Take Your C# Skills to the Next Level,,ads,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10793638,Dec 03 '14,Brent Spooner,C# Advanced Topics: Take Your C# Skills to the Next Level,,ads,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10792906,Dec 03 '14,Zhangqi,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10789320,Dec 03 '14,Curtiss Pope,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10785470,Dec 03 '14,Gang Wang,C# Developers: Double Your Coding Speed with Visual Studio ,,affiliate,Web,29.00,usd,,,29.00,7.25,0.00,1.0000
+10762908,Dec 02 '14,Dfsqing,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10749304,Dec 02 '14,Agcfdxx,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10743230,Dec 02 '14,Keith Taylor,C# Advanced Topics: Take Your C# Skills to the Next Level,,ads,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10741932,Dec 02 '14,Asdxvv,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10732586,Dec 02 '14,Asdxxsza,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10730592,Dec 02 '14,Stephan Frei,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,9.50,0.00,1.0000
+10696270,Dec 02 '14,John Fischer,C# Advanced Topics: Take Your C# Skills to the Next Level,,ads,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10694788,Dec 02 '14,Sdasdasd,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10690020,Dec 02 '14,Asfasf,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10689272,Dec 02 '14,Dsfasdf,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10684944,Dec 02 '14,Dfdsfdsf,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10684474,Dec 02 '14,Sdfgsdgfsd,C# Advanced Topics: Take Your C# Skills to the Next Level,,affiliate,Web,19.00,usd,,,19.00,4.75,0.00,1.0000
+10671244,Dec 01 '14,SaadHusain,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,9.50,0.00,1.0000
+10664666,Dec 01 '14,Karl Goodloe,C# Advanced Topics: Take Your C# Skills to the Next Level,,organic,Web,19.00,usd,,,19.00,9.50,0.00,1.0000
+10612102,Dec 01 '14,Michael,Backbone Tutorial: Learn Backbonejs from Scratch,BQUORA,instructor,Web,34.00,usd,,,34.00,32.98,0.00,1.0000
+Redemptions
+Split Id,Transaction Date,User Name,Course Name,Coupon Code
+30559444,2014-12-31 14:30:16+00:00,Cheit,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+30184832,2014-12-29 12:20:36+00:00,Barry Bruner,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+28967306,2014-12-17 21:04:06+00:00,Jay Hammer,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+28686982,2014-12-16 07:16:18+00:00,Cagdas Tulek,Backbone Tutorial: Learn Backbonejs from Scratch,udemy-internal-cagdas
+28630846,2014-12-15 23:21:56+00:00,Jean Gelinas,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+28601484,2014-12-15 18:27:20+00:00,Mark Jackson,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+28361255,2014-12-12 22:07:44+00:00,Suman Rayabharapu,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27990672,2014-12-10 06:21:07+00:00,Jay Lee,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27705304,2014-12-06 17:26:55+00:00,Alex W,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27633366,2014-12-05 17:57:57+00:00,Kfitting,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27464176,2014-12-04 11:06:35+00:00,Maja Vladimirova,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27462744,2014-12-04 10:52:42+00:00,Pradeeptk ಕೃಷ್ಣಸ್ವಾಮಿ,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27447084,2014-12-04 08:23:29+00:00,Muhammed Kaçar,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27359214,2014-12-03 20:31:22+00:00,Cristian Alejandro González Silvestre,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27338074,2014-12-03 16:58:03+00:00,Aytaç,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27329820,2014-12-03 15:45:57+00:00,Charles Eaton,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27325838,2014-12-03 15:10:21+00:00,Ayesha.hafeez@gmail.com,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27324524,2014-12-03 14:55:39+00:00,Peter Friis,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27305102,2014-12-03 11:13:55+00:00,Peter Stampede,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27272920,2014-12-03 06:33:24+00:00,Ruben Parrales,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27229586,2014-12-03 01:16:50+00:00,Wilber Hernandez,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27224352,2014-12-03 00:23:33+00:00,Ramesh.m.kannan@gmail.com,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27210502,2014-12-02 21:35:43+00:00,Michael Fontenot,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27208972,2014-12-02 21:22:46+00:00,B Hotzel,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27143224,2014-12-02 16:08:01+00:00,Carlos Chapa,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27141886,2014-12-02 16:03:20+00:00,Joshua Homer,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27138404,2014-12-02 15:51:06+00:00,T Guthmann,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27124132,2014-12-02 14:49:14+00:00,Hal Levy,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27118982,2014-12-02 14:12:01+00:00,Roy,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27091606,2014-12-02 07:41:56+00:00,Miguel Menindez,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27090620,2014-12-02 07:34:26+00:00,sandeep chowdary,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27088912,2014-12-02 07:22:29+00:00,Vigilius Tridian Caraka,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27088448,2014-12-02 07:19:01+00:00,Haakon Hestness,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+27002260,2014-12-02 00:32:28+00:00,Larry Scoffield,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+26959464,2014-12-01 21:27:24+00:00,David Watts,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+26957948,2014-12-01 21:20:10+00:00,BenJamin Morin,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+26956958,2014-12-01 21:15:26+00:00,Eliot Hance,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+26918580,2014-12-01 14:11:17+00:00,David Black,C# Advanced Topics: Take Your C# Skills to the Next Level,csharpreview
+Refunds
+Refund Date,User Name,Course Name,Refund Amount,Instructor Refund Amount
+2015-01-17 15:47:40+00:00,Asfasf,C# Advanced Topics: Take Your C# Skills to the Next Level,0.000000,0.00
+2015-01-15 15:15:19+00:00,Dfsqing,C# Advanced Topics: Take Your C# Skills to the Next Level,19.000000,4.75
+2015-01-08 19:23:00+00:00,Shawn Hartley,Backbone Tutorial: Learn Backbonejs from Scratch,34.000000,8.50
+2015-01-05 00:31:11+00:00,Elson Ong,Backbone Tutorial: Learn Backbonejs from Scratch,67.000000,33.50
+2014-12-25 17:26:50+00:00,Katherine Guzman,C# Advanced Topics: Take Your C# Skills to the Next Level,19.000000,4.75
+2014-12-20 15:16:46+00:00,Zhangqi,C# Advanced Topics: Take Your C# Skills to the Next Level,19.000000,4.75
+2014-12-16 20:03:22+00:00,Taylor Sprinkle,C# Advanced Topics: Take Your C# Skills to the Next Level,19.000000,9.50
+2014-12-15 16:23:19+00:00,Sdasdasd,C# Advanced Topics: Take Your C# Skills to the Next Level,19.000000,4.75
+2014-12-14 22:44:21+00:00,Asfasf,C# Advanced Topics: Take Your C# Skills to the Next Level,19.000000,4.75
+2014-12-14 22:28:12+00:00,Asdxvv,C# Advanced Topics: Take Your C# Skills to the Next Level,19.000000,4.75
+2014-12-14 21:29:15+00:00,Dfdsfdsf,C# Advanced Topics: Take Your C# Skills to the Next Level,19.000000,4.75
+2014-12-14 20:24:03+00:00,Asdxxsza,C# Advanced Topics: Take Your C# Skills to the Next Level,19.000000,4.75
