@@ -2,7 +2,7 @@
 
 Description
 ----
-A node package that will search through a CSV file and import records into a MySQL database. This will create various tables if they do no exist: statements, teachable, and udemy. This will read all CSV files in both the teachable and udemy directories. All CSV file names that do not appear in the statements table will be processed. After the CSV file has been processed, it will be inserted into the statements directory to be skipped next time. All rows in the CSV files will be processed. If a row represents a valid transaction, its data will be inserted into either the teachable or udemy table. Otherwise, the row will be skipped.
+A node package that will search through a CSV file and import records into a MySQL database. This will create various tables if they do not exist: courses, statements, teachable, and udemy. This will read all CSV files in both the teachable and udemy directories. All CSV file names that appear in the statements table will have the corresponding statement record deleted (cascading to delete all the corresponding teachable and udemy records). After a CSV file has been processed, it will be inserted into the statements directory to be re-imported next time. All rows in the CSV files will be processed. If a row represents a valid transaction, its data will be inserted into either the teachable or udemy table. Otherwise, the row will be skipped.
 
 Command Line Interface
 ----

@@ -1,4 +1,5 @@
 import args from "./args";
+import * as AwaitLock from "await-lock";
 import * as csv from "fast-csv";
 import * as fs from "fs";
 import * as mysql from "mysql";
@@ -39,8 +40,8 @@ export default class UdemyService {
     async handleUdemyFile(sql: MySQLService, connection: mysql.Connection, database: string, udemyDirectory: string, udemyFileName: string, statement: Statement): Promise<void> {
         return new Promise<void>((resolve, reject) => {
             const file = path.join(udemyDirectory, udemyFileName);
+            const lock = new AwaitLock();
             let monitorStatus = 0;
-            let awaiting = 1;
             csv.fromPath(file)
                 .on("data", async (line) => {
                     if (!Array.isArray(line) || line.length === 0) {
@@ -70,18 +71,24 @@ export default class UdemyService {
                                 taxRate: utils.coerceFloat(line[13]),
                                 exchangeRate: utils.coerceFloat(line[14])
                             };
-                            awaiting++;
-                            await sql.insertUdemy(connection, database, udemy);
-                            if (--awaiting === 0) {
-                                resolve();
+                            await lock.acquireAsync();
+                            try {
+                                let course = await sql.selectCourseByUdemyName(connection, database, udemy.courseName);
+                                if (!course) {
+                                    course = { courseName: udemy.courseName, udemyName: udemy.courseName };
+                                    await sql.insertCourse(connection, database, course);
+                                }
+                                await sql.insertUdemy(connection, database, udemy);
+                            } finally {
+                                lock.release();
                             }
                         }
                     }
                 })
-                .on("end", () => {
-                    if (--awaiting === 0) {
-                        resolve();
-                    }
+                .on("end", async () => {
+                    await lock.acquireAsync();
+                    lock.release();
+                    resolve();
                 });
         });
     }

@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "argv": "0.0.2",
+    "await-lock": "^1.1.2",
     "fast-csv": "^2.4.1",
     "mysql": "^2.15.0"
   },

@@ -1,4 +1,5 @@
 import args from "./args";
+import * as AwaitLock from "await-lock";
 import * as csv from "fast-csv";
 import * as fs from "fs";
 import * as mysql from "mysql";
@@ -29,7 +30,7 @@ export default class TeachableService {
     async handleTeachable(sql: MySQLService, connection: mysql.Connection, database: string, teachableDirectory: string, teachableFileName: string): Promise<void> {
         return new Promise<void>((resolve, reject) => {
             const file = path.join(teachableDirectory, teachableFileName);
-            let awaiting = 1;
+            const lock = new AwaitLock();
             csv.fromPath(file, { headers: true })
                 .on("data", async (line) => {
                     const teachable: Teachable = {
@@ -42,16 +43,22 @@ export default class TeachableService {
                         userID: utils.coerceInt(line["user_id"]),
                         saleID: utils.coerceInt(line["sale_id"])
                     };
-                    awaiting++;
-                    await sql.insertTeachable(connection, database, teachable);
-                    if (--awaiting === 0) {
-                        resolve();
+                    await lock.acquireAsync();
+                    try {
+                        let course = await sql.selectCourseByTeachableName(connection, database, teachable.courseName);
+                        if (!course) {
+                            course = { courseName: teachable.courseName, teachableName: teachable.courseName };
+                            await sql.insertCourse(connection, database, course);
+                        }
+                        await sql.insertTeachable(connection, database, teachable);
+                    } finally {
+                        lock.release();
                     }
                 })
-                .on("end", () => {
-                    if (--awaiting === 0) {
-                        resolve();
-                    }
+                .on("end", async () => {
+                    await lock.acquireAsync();
+                    lock.release();
+                    resolve();
                 });
         });
     }

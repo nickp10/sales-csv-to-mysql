@@ -1,4 +1,4 @@
-import { Statement, Teachable, Udemy } from "./interfaces";
+import { Course, Statement, Teachable, Udemy } from "./interfaces";
 import * as mysql from "mysql";
 
 export default class MySQLService {
@@ -42,6 +42,77 @@ export default class MySQLService {
                 }
             });
         }); 
+    }
+
+    async createCoursesTable(connection: mysql.Connection, database: string): Promise<void> {
+        return new Promise<void>((resolve, reject) => {
+            const sql = `CREATE TABLE IF NOT EXISTS \`${database}\`.\`courses\` (
+                \`id\` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
+                \`courseName\` NVARCHAR(255) NULL,
+                \`teachableName\` NVARCHAR(255) NULL,
+                \`udemyName\` NVARCHAR(255) NULL,
+                PRIMARY KEY (\`id\`),
+                UNIQUE KEY (\`teachableName\`),
+                UNIQUE KEY (\`udemyName\`)
+            );`;
+            connection.query(sql, (error) => {
+                if (error) {
+                    reject(error);
+                } else {
+                    resolve();
+                }
+            })
+        });
+    }
+
+    async insertCourse(connection: mysql.Connection, database: string, course: Course): Promise<void> {
+        return new Promise<void>((resolve, reject) => {
+            const sql = `INSERT INTO \`${database}\`.\`courses\` (\`courseName\`, \`teachableName\`, \`udemyName\`) VALUES (?, ?, ?)`;
+            connection.query(sql, [ course.courseName, course.teachableName, course.udemyName ], (error, result) => {
+                if (error) {
+                    reject(error);
+                } else {
+                    course.id = result.insertId;
+                    resolve();
+                }
+            })
+        });
+    }
+
+    async selectCourseByTeachableName(connection: mysql.Connection, database: string, teachableName: string): Promise<Course> {
+        return new Promise<Course>((resolve, reject) => {
+            const sql = `SELECT * FROM \`${database}\`.\`courses\` WHERE \`teachableName\` = ?`;
+            connection.query(sql, [ teachableName ], (error, rows) => {
+                if (error) {
+                    reject(error);
+                } else if (!Array.isArray(rows)) {
+                    reject("An invalid reponse was returned from the SQL query.");
+                } else if (rows.length < 1) {
+                    resolve(undefined);
+                } else {
+                    const row = rows[0];
+                    resolve({ id: row["id"], courseName: row["courseName"], teachableName: row["teachableName"], udemyName: row["udemyName"] });
+                }
+            });
+        });
+    }
+
+    async selectCourseByUdemyName(connection: mysql.Connection, database: string, udemyName: string): Promise<Course> {
+        return new Promise<Course>((resolve, reject) => {
+            const sql = `SELECT * FROM \`${database}\`.\`courses\` WHERE \`udemyName\` = ?`;
+            connection.query(sql, [ udemyName ], (error, rows) => {
+                if (error) {
+                    reject(error);
+                } else if (!Array.isArray(rows)) {
+                    reject("An invalid reponse was returned from the SQL query.");
+                } else if (rows.length < 1) {
+                    resolve(undefined);
+                } else {
+                    const row = rows[0];
+                    resolve({ id: row["id"], courseName: row["courseName"], teachableName: row["teachableName"], udemyName: row["udemyName"] });
+                }
+            });
+        });
     }
 
     async createStatementsTable(connection: mysql.Connection, database: string): Promise<void> {
@@ -115,7 +186,10 @@ export default class MySQLService {
                 \`coupon\` NVARCHAR(255) NULL,
                 \`userID\` BIGINT NULL,
                 \`saleID\` BIGINT NULL,
-                PRIMARY KEY (\`id\`)
+                PRIMARY KEY (\`id\`),
+                FOREIGN KEY (\`courseName\`) REFERENCES \`${database}\`.\`courses\` (\`teachableName\`)
+                    ON DELETE RESTRICT
+                    ON UPDATE CASCADE
             );`;
             connection.query(sql, (error) => {
                 if (error) {
@@ -186,6 +260,9 @@ export default class MySQLService {
                 PRIMARY KEY (\`id\`),
                 FOREIGN KEY (\`statementID\`) REFERENCES \`${database}\`.\`statements\` (\`id\`)
                     ON DELETE CASCADE
+                    ON UPDATE CASCADE,
+                FOREIGN KEY (\`courseName\`) REFERENCES \`${database}\`.\`courses\` (\`udemyName\`)
+                    ON DELETE RESTRICT
                     ON UPDATE CASCADE
             );`;
             connection.query(sql, (error) => {

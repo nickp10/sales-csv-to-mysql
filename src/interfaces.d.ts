@@ -1,3 +1,10 @@
+export interface Course {
+    id?: number;
+    courseName?: string;
+    teachableName?: string;
+    udemyName?: string;
+}
+
 export interface Statement {
     id?: number;
     fileName?: string;

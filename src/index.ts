@@ -34,6 +34,10 @@ async function createDatabase(sql: MySQLService, connection: mysql.Connection): 
 
 async function createTables(sql: MySQLService, connection: mysql.Connection): Promise<void> {
     try {
+        process.stdout.write(`Creating table courses if it does not exist...`);
+        await sql.createCoursesTable(connection, args.mysqlDatabase);
+        console.log("Done");
+
         process.stdout.write(`Creating table statements if it does not exist...`);
         await sql.createStatementsTable(connection, args.mysqlDatabase);
         console.log("Done");
