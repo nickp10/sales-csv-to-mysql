@@ -47,8 +47,16 @@ export default class TeachableService {
                     try {
                         let course = await sql.selectCourseByTeachableName(connection, database, teachable.courseName);
                         if (!course) {
-                            course = { courseName: teachable.courseName, teachableName: teachable.courseName };
-                            await sql.insertCourse(connection, database, course);
+                            course = await sql.selectCourseByUdemyName(connection, database, teachable.courseName);
+                            // Course not found by teachableName, but found by udemyName. Since this is a teachable,
+                            // update the course's teachableName so it can be found next time.
+                            if (course) {
+                                course.teachableName = teachable.courseName;
+                                await sql.updateCourse(connection, database, course);
+                            } else {
+                                course = { courseName: teachable.courseName, teachableName: teachable.courseName };
+                                await sql.insertCourse(connection, database, course);
+                            }
                         }
                         await sql.insertTeachable(connection, database, teachable);
                     } finally {

@@ -75,8 +75,16 @@ export default class UdemyService {
                             try {
                                 let course = await sql.selectCourseByUdemyName(connection, database, udemy.courseName);
                                 if (!course) {
-                                    course = { courseName: udemy.courseName, udemyName: udemy.courseName };
-                                    await sql.insertCourse(connection, database, course);
+                                    course = await sql.selectCourseByTeachableName(connection, database, udemy.courseName);
+                                    // Course not found by udemyName, but found by teachableName. Since this is a udemy,
+                                    // update the course's udemyName so it can be found next time.
+                                    if (course) {
+                                        course.udemyName = udemy.courseName;
+                                        await sql.updateCourse(connection, database, course);
+                                    } else {
+                                        course = { courseName: udemy.courseName, udemyName: udemy.courseName };
+                                        await sql.insertCourse(connection, database, course);
+                                    }
                                 }
                                 await sql.insertUdemy(connection, database, udemy);
                             } finally {

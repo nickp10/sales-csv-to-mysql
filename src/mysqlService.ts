@@ -79,6 +79,19 @@ export default class MySQLService {
         });
     }
 
+    async updateCourse(connection: mysql.Connection, database: string, course: Course): Promise<void> {
+        return new Promise<void>((resolve, reject) => {
+            const sql = `UPDATE \`${database}\`.\`courses\` SET \`courseName\` = ?, \`teachableName\` = ?, \`udemyName\` = ? WHERE \`id\` = ?`;
+            connection.query(sql, [ course.courseName, course.teachableName, course.udemyName, course.id ], (error, result) => {
+                if (error) {
+                    reject(error);
+                } else {
+                    resolve();
+                }
+            })
+        });
+    }
+
     async selectCourseByTeachableName(connection: mysql.Connection, database: string, teachableName: string): Promise<Course> {
         return new Promise<Course>((resolve, reject) => {
             const sql = `SELECT * FROM \`${database}\`.\`courses\` WHERE \`teachableName\` = ?`;
