@@ -12,6 +12,7 @@ This package is only usable via a command line interface (CLI). This package has
 * *--mysql-port* - **Optional.** This is the port to connect to MySQL. This will default to `3306`.
 * *--mysql-database* - **Optional.** This is the name of the MySQL database to connect to. This will default to `sales`.
 * *--mysql-user* - **Optional.** This is the username to connect to MySQL. This will default to `root`.
-* *--mysql-password* - **Optional.** This is the passwrod to connect to MySQL. This will default to an empty password.
+* *--mysql-password* - **Optional.** This is the password to connect to MySQL. This will default to an empty password.
+* *--courses-directory* - **Optional.** This is an optional directory to read the course name mappings CSV file from. This will default to a courses subdirectory in the current executing directory.
 * *--teachable-directory* - **Optional.** This is an optional directory to read the teachable CSV files from. This will default to a teachable subdirectory in the current executing directory.
 * *--udemy-directory* - **Optional.** This is an optional directory to read the udemy CSV files from. This will default to a udemy subdirectory in the current executing directory.

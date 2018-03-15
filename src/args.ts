@@ -8,6 +8,7 @@ class Args {
     mysqlDatabase: string;
     mysqlUser: string;
     mysqlPassword: string;
+    coursesDirectory: string;
     teachableDirectory: string;
     udemyDirectory: string;
 
@@ -18,6 +19,7 @@ class Args {
             .option({ name: "mysql-database", type: "string" })
             .option({ name: "mysql-user", type: "string" })
             .option({ name: "mysql-password", type: "string" })
+            .option({ name: "courses-directory", type: "string" })
             .option({ name: "teachable-directory", type: "string" })
             .option({ name: "udemy-directory", type: "string" })
             .run();
@@ -26,12 +28,13 @@ class Args {
         const argMysqlDatabase = args.options["mysql-database"];
         const argMysqlUser = args.options["mysql-user"];
         const argMysqlPassword = args.options["mysql-password"];
+        const argCoursesDirectory = args.options["courses-directory"];
         const argTeachableDirectory = args.options["teachable-directory"];
         const argUdemyDirectory = args.options["udemy-directory"];
-        this.validate(argMysqlHost, argMysqlPort, argMysqlDatabase, argMysqlUser, argMysqlPassword, argTeachableDirectory, argUdemyDirectory);
+        this.validate(argMysqlHost, argMysqlPort, argMysqlDatabase, argMysqlUser, argMysqlPassword, argCoursesDirectory, argTeachableDirectory, argUdemyDirectory);
     }
 
-    validate(argMysqlHost: string, argMysqlPort: number, argMysqlDatabase: string, argMysqlUser: string, argMysqlPassword: string, argTeachableDirectory: string, argUdemyDirectory: string): void {
+    validate(argMysqlHost: string, argMysqlPort: number, argMysqlDatabase: string, argMysqlUser: string, argMysqlPassword: string, argCoursesDirectory: string, argTeachableDirectory: string, argUdemyDirectory: string): void {
         // Validate mysql-host
         this.mysqlHost = argMysqlHost || "localhost";
         if (!this.mysqlHost) {
@@ -62,6 +65,13 @@ class Args {
 
         // Validate mysql-password
         this.mysqlPassword = argMysqlPassword || "";
+
+        // Validate courses-directory
+        this.coursesDirectory = argCoursesDirectory || path.join(__dirname, "..", "courses");
+        if (!this.coursesDirectory) {
+            console.error("The --courses-directory argument must be supplied.");
+            process.exit();
+        }
 
         // Validate teachable-directory
         this.teachableDirectory = argTeachableDirectory || path.join(__dirname, "..", "teachable");

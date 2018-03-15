@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 
 import args from "./args";
+import CourseNameMappingService from "./courseNameMappingService";
 import * as mysql from "mysql";
 import MySQLService from "./mysqlService";
 import TeachableService from "./teachableService";
@@ -56,6 +57,17 @@ async function createTables(sql: MySQLService, connection: mysql.Connection): Pr
     }
 }
 
+async function populateCourseNameMappings(sql: MySQLService, connection: mysql.Connection): Promise<void> {
+    try {
+        const service = new CourseNameMappingService();
+        await service.readAllCourseNameMappings(sql, connection, args.mysqlDatabase);
+    } catch (error) {
+        console.log(error.message);
+        await sql.disconnect(connection);
+        process.exit();
+    }
+}
+
 async function processUdemy(sql: MySQLService, connection: mysql.Connection): Promise<void> {
     try {
         const service = new UdemyService();
@@ -83,6 +95,7 @@ async function main(): Promise<void> {
     const connection = await connect(sql);
     await createDatabase(sql, connection);
     await createTables(sql, connection);
+    await populateCourseNameMappings(sql, connection);
     await processUdemy(sql, connection);
     await processTeachables(sql, connection);
     await sql.disconnect(connection);
