@@ -1,5 +1,5 @@
 import args from "./args";
-import * as AwaitLock from "await-lock";
+import AwaitLock = require("await-lock");
 import * as csv from "fast-csv";
 import * as fs from "fs";
 import * as mysql from "mysql";
@@ -41,7 +41,9 @@ export default class TeachableService {
                         earningsUSD: utils.coerceFloat(line["earnings_usd"]),
                         coupon: line["coupon"],
                         userID: utils.coerceInt(line["user_id"]),
-                        saleID: utils.coerceInt(line["sale_id"])
+                        saleID: utils.coerceInt(line["sale_id"]),
+                        userName: line["user"],
+                        userEmail: line["user_email"]
                     };
                     await lock.acquireAsync();
                     try {

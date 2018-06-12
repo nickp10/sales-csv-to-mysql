@@ -1,5 +1,5 @@
 import args from "./args";
-import * as AwaitLock from "await-lock";
+import AwaitLock = require("await-lock");
 import * as csv from "fast-csv";
 import * as fs from "fs";
 import * as mysql from "mysql";

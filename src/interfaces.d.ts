@@ -20,6 +20,8 @@ export interface Teachable {
     coupon?: string;
     userID?: number;
     saleID?: number;
+    userName?: string;
+    userEmail?: string;
 }
 
 export interface Udemy {

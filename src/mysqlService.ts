@@ -205,6 +205,37 @@ export default class MySQLService {
         });
     }
 
+    async columnExists(connection: mysql.Connection, database: string, table: string, columnName: string): Promise<boolean> {
+        return new Promise<boolean>((resolve, reject) => {
+            const sql = `SELECT COUNT(*) AS columnCount FROM INFORMATION_SCHEMA.COLUMNS
+                WHERE \`table_schema\` = ?
+                AND \`table_name\` = ?
+                AND \`column_name\` = ?`;
+            connection.query(sql, [ database, table, columnName ], (error, rows) => {
+                if (error) {
+                    reject(error);
+                } else if (!Array.isArray(rows) || rows.length < 0) {
+                    reject("An invalid reponse was returned from the SQL query.");
+                } else {
+                    resolve(rows[0].columnCount > 0);
+                }
+            });
+        });
+    }
+
+    async addColumn(connection: mysql.Connection, database: string, table: string, columnSchema: string): Promise<void> {
+        return new Promise<void>((resolve, reject) => {
+            const sql = `ALTER TABLE \`${database}\`.\`${table}\` ADD ${columnSchema}`;
+            connection.query(sql, (error, rows) => {
+                if (error) {
+                    reject(error);
+                } else {
+                    resolve();
+                }
+            });
+        });
+    }
+
     async createTeachableTable(connection: mysql.Connection, database: string): Promise<void> {
         return new Promise<void>((resolve, reject) => {
             const sql = `CREATE TABLE IF NOT EXISTS \`${database}\`.\`teachable\` (
@@ -217,16 +248,30 @@ export default class MySQLService {
                 \`coupon\` NVARCHAR(255) NULL,
                 \`userID\` BIGINT NULL,
                 \`saleID\` BIGINT NULL,
+                \`userName\` NVARCHAR(255) NULL,
+                \`userEmail\` NVARCHAR(255) NULL,
                 PRIMARY KEY (\`id\`),
                 FOREIGN KEY (\`courseName\`) REFERENCES \`${database}\`.\`courses\` (\`teachableName\`)
                     ON DELETE RESTRICT
                     ON UPDATE CASCADE
             );`;
-            connection.query(sql, (error) => {
+            connection.query(sql, async (error) => {
                 if (error) {
                     reject(error);
                 } else {
-                    resolve();
+                    try {
+                        const userNameExists = await this.columnExists(connection, database, "teachable", "userName");
+                        if (!userNameExists) {
+                            await this.addColumn(connection, database, "teachable", "`userName` NVARCHAR(255) NULL");
+                        }
+                        const userEmailExists = await this.columnExists(connection, database, "teachable", "userEmail");
+                        if (!userEmailExists) {
+                            await this.addColumn(connection, database, "teachable", "`userEmail` NVARCHAR(255) NULL");
+                        }
+                        resolve();
+                    } catch (error) {
+                        reject(error);
+                    }
                 }
             })
         });
@@ -250,12 +295,14 @@ export default class MySQLService {
             const sql = `INSERT INTO \`${database}\`.\`teachable\`
                 (
                     \`teachableID\`, \`purchasedAt\`, \`courseName\`, \`finalPrice\`,
-                    \`earningsUSD\`, \`coupon\`, \`userID\`, \`saleID\`
+                    \`earningsUSD\`, \`coupon\`, \`userID\`, \`saleID\`, \`userName\`,
+                    \`userEmail\`
                 )
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?)`;
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`;
             const values = [
                 teachable.teachableID, teachable.purchasedAt, teachable.courseName, teachable.finalPrice,
-                teachable.earningsUSD, teachable.coupon, teachable.userID, teachable.saleID
+                teachable.earningsUSD, teachable.coupon, teachable.userID, teachable.saleID, teachable.userName,
+                teachable.userEmail
             ];
             connection.query(sql, values, (error, result) => {
                 if (error) {
