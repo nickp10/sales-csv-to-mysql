@@ -1,5 +1,5 @@
 import args from "./args";
-import AwaitLock = require("await-lock");
+import AwaitLock from "await-lock";
 import * as csv from "fast-csv";
 import * as fs from "fs";
 import * as mysql from "mysql";
@@ -42,7 +42,7 @@ export default class UdemyService {
             const file = path.join(udemyDirectory, udemyFileName);
             const lock = new AwaitLock();
             let monitorStatus = 0;
-            csv.fromPath(file)
+            csv.parseFile(file)
                 .on("data", async (line) => {
                     if (!Array.isArray(line) || line.length === 0) {
                         return;

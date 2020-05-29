@@ -1,5 +1,5 @@
 import args from "./args";
-import AwaitLock = require("await-lock");
+import AwaitLock from "await-lock";
 import * as csv from "fast-csv";
 import * as fs from "fs";
 import * as mysql from "mysql";
@@ -31,7 +31,7 @@ export default class TeachableService {
         return new Promise<void>((resolve, reject) => {
             const file = path.join(teachableDirectory, teachableFileName);
             const lock = new AwaitLock();
-            csv.fromPath(file, { headers: true })
+            csv.parseFile(file, { headers: true })
                 .on("data", async (line) => {
                     const teachable: Teachable = {
                         teachableID: utils.coerceInt(line["id"]),

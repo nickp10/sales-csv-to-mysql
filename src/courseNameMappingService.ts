@@ -1,5 +1,5 @@
 import args from "./args";
-import AwaitLock = require("await-lock");
+import AwaitLock from "await-lock";
 import * as csv from "fast-csv";
 import * as fs from "fs";
 import * as mysql from "mysql";
@@ -29,7 +29,7 @@ export default class CourseNameMappingService {
         return new Promise<void>((resolve, reject) => {
             const file = path.join(coursesDirectory, courseFileName);
             const lock = new AwaitLock();
-            csv.fromPath(file, { headers: true })
+            csv.parseFile(file, { headers: true })
                 .on("data", async (line) => {
                     const course: Course = {
                         courseName: line["CourseName"],
